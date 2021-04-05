@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  protoc:
+    image: namely/protoc-all
+    volumes:
+      - .:/defs
+    command: -f ./mail/*.proto -l go -o . 

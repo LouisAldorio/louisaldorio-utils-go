@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package mail;
+
+option go_package = "mail/";
+
+service Mail {
+    rpc SendMail(SendMailRequest) returns(SendMailResponse){}
+}
+
+message SendMailRequest {
+    string email = 1;
+    string first_name = 2;
+    string last_name = 3;
+    string phone_number = 4;
+    string messages = 5;
+}
+
+message SendMailResponse {
+    bool status = 1;
+    string status_message = 2;
+}
