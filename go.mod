@@ -1,4 +1,4 @@
-module github.com/LouisAldorio/louisaldorio-utils-go.git
+module github.com/LouisAldorio/louisaldorio-utils-go
 
 go 1.15
 
