@@ -14,6 +14,7 @@ message SendMailRequest {
     string last_name = 3;
     string phone_number = 4;
     string messages = 5;
+    string subject = 6;
 }
 
 message SendMailResponse {
